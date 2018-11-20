@@ -3,10 +3,6 @@ const expect = chai.expect;
 describe('index.js', () => {
   describe('printBadges()', () => {
     let spy;
-    let names= ['Ada', 'Brendan', 'Ali']
-    function printBadges(names){ for (let i=0; i<names.length; i++) {console.log(`Employee ${names[i]} Badges`)}
-                               return names;}
-
 
     beforeEach(() => {
       spy = sinon.spy(console, 'log');
