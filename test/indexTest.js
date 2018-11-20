@@ -3,7 +3,7 @@ const expect = chai.expect;
 describe('index.js', () => {
   describe('printBadges()', () => {
     let spy;
-    
+
     beforeEach(() => {
       spy = sinon.spy(console, 'log');
     });
